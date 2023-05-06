@@ -1,0 +1,56 @@
+<div>
+    <h1>Registro</h1>
+
+<div>
+    <form action="/api/session/register" method="post" id="registerForm">
+        <label for="nombre-cliente">Nombre del usuario</label><br />
+        <input
+            type="text"
+            name="firstName"
+            id="firstNname"
+            placeholder="introduzca su nombre"
+            required
+        /><br />
+        <label for="lastName">Apellido</label><br />
+        <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="introduzca su apellido"
+            required
+        /><br />
+        <label for="lastName">Edad</label><br />
+        <input
+            type="text"
+            name="edad"
+            id="edad"
+            placeholder="introduzca su edad"
+            required
+        /><br />
+        <label for="email">Email</label><br />
+        <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="introduzca su correo electronico"
+            required
+        />
+        <br />
+        <label for="password">Contrasena</label><br />
+        <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="introduzca su contrasena"
+            required
+        />
+        <br />
+        <button id="registerButton">
+            Registrar
+        </button>
+    </form>
+</div>
+</div>
+
+<script src="/js/register.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

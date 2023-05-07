@@ -8,9 +8,9 @@ const { JWT_STRATEGY } = require('../config/config');
 const router =  Router();
 
 //crear
-router.post('/', passportCustom(JWT_STRATEGY),/* userPermission */ createCarts)
+router.post('/', passportCustom(JWT_STRATEGY),  userPermission , createCarts)
 //agregar al carrito
-router.post('/:cid', passportCustom(JWT_STRATEGY),/* userPermission */ addProductsToCart)
+router.post('/:cid', passportCustom(JWT_STRATEGY), userPermission , addProductsToCart)
 //buscar todos los carritos
 router.get ("/", getAllCart)
 //buscar carrito por id
